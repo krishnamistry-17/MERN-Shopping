@@ -1,0 +1,67 @@
+.relatedproduct {
+    text-align: center;
+    margin-bottom: 40px;
+    /* Adjust spacing as needed */
+}
+
+.relatedproduct h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.relatedproduct hr {
+    width: 30%;
+    height: 2px;
+    background-color: #000;
+    /* Dark color, adjust as needed */
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /* Adjust spacing as needed */
+}
+
+.relatedproduct .relatedproduct-item {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap onto multiple lines */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+.relatedproduct .relatedproduct-item .item {
+    flex: 1 1 calc(25% - 20px);
+    /* Adjust width of items */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    /* Adjust spacing between items */
+}
+
+.relatedproduct .relatedproduct-item .item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    /* Maximum height for images */
+    object-fit: contain;
+    /* Ensures entire image is visible within the container */
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+.relatedproduct .relatedproduct-item .item .item-details {
+    padding: 15px;
+}
+
+.relatedproduct .relatedproduct-item .item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.relatedproduct .relatedproduct-item .item p {
+    color: #777;
+    margin: 5px 0;
+}

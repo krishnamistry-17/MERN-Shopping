@@ -1,0 +1,50 @@
+.intro-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../components/Assets/intro.jpg');
+    background-size: cover;
+    /* Adjust based on your preference */
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.intro-content {
+    position: relative;
+    z-index: 1;
+    /* Ensure content appears above the background */
+}
+
+.intro-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cta-buttons .btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #0056b3;
+}

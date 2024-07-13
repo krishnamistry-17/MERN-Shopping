@@ -1,0 +1,165 @@
+.shopcategory-banner{
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+}
+.shopcategory-indexsort{
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+.shopcategory-sort{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+.shopcategory-indexsort p span{
+    font-weight: 600;
+}
+/* .shopcategory-products{
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.shopcategory-products-item{
+    height: 100px;
+    width: 100px;
+} */
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+}
+.shopcategory-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* space between items */
+  justify-content: center; /* center items horizontally */
+  padding: 20px; /* padding around the container */
+}
+
+.shopcategory-products .item {
+  background-color: #fff; /* background color for each item */
+  border: 1px solid #e0e0e0; /* border around each item */
+  border-radius: 8px; /* rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* slight shadow for depth */
+  overflow: hidden; /* ensure content fits within item boundaries */
+  transition: transform 0.3s; /* smooth transition for hover effect */
+  width: calc(25% - 20px); /* adjust width of items, ensuring they fit within the container */
+  text-align: center; /* center align text */
+}
+
+.shopcategory-products .item img-container {
+  width: 100%; /* make container width 100% of the item */
+  height: 250px; /* fixed height for all image containers */
+  overflow: hidden; /* ensure image doesn't overflow the container */
+}
+
+.shopcategory-products .item img {
+  width: 100%; /* make image width 100% of the container */
+  height: 100%; /* make image height 100% of the container */
+  object-fit: cover; /* cover the container area with the image */
+  object-position: top; /* align image to the top */
+  border-bottom: 1px solid #e0e0e0; /* separator line below image */
+}
+
+.shopcategory-products .item .item-details {
+  padding: 10px; /* padding inside item for text and other content */
+}
+
+.shopcategory-products .item:hover {
+  transform: scale(1.05); /* slightly enlarge item on hover */
+}
+
+.shopcategory-products .item h2 {
+  font-size: 1.2em; /* size of the product name */
+  margin: 10px 0; /* margin around the product name */
+  color: #333; /* color of the product name */
+}
+
+.shopcategory-products .item p {
+  color: #777; /* color of the product price and other text */
+  margin: 5px 0; /* margin around the text */
+}
+.shopcategory-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* space between items */
+    justify-content: center;
+    /* center items horizontally */
+    padding: 20px;
+    /* padding around the container */
+}
+
+.shopcategory-products .item {
+    background-color: #fff;
+    /* background color for each item */
+    border: 1px solid #e0e0e0;
+    /* border around each item */
+    border-radius: 8px;
+    /* rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* slight shadow for depth */
+    overflow: hidden;
+    /* ensure content fits within item boundaries */
+    transition: transform 0.3s;
+    /* smooth transition for hover effect */
+    width: calc(25% - 20px);
+    /* adjust width of items, ensuring they fit within the container */
+    text-align: center;
+    /* center align text */
+}
+
+.shopcategory-products .item img {
+    width: 100%;
+    /* make image width 100% of the container */
+    height: 200px;
+    /* fixed height for all images */
+    object-fit: contain;
+    /* ensure the entire image is visible */
+    border-bottom: 1px solid #e0e0e0;
+    /* separator line below image */
+    /* grid-template-columns: repeat(3,1fr); */
+}
+
+.shopcategory-products .item .item-details {
+    padding: 10px;
+    /* padding inside item for text and other content */
+}
+
+.shopcategory-products .item:hover {
+    transform: scale(1.05);
+    /* slightly enlarge item on hover */
+}
+
+.shopcategory-products .item h2 {
+    font-size: 1.2em;
+    /* size of the product name */
+    margin: 10px 0;
+    /* margin around the product name */
+    color: #333;
+    /* color of the product name */
+}
+
+.shopcategory-products .item p {
+    color: #777;
+    /* color of the product price and other text */
+    margin: 5px 0;
+    /* margin around the text */
+}

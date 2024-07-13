@@ -13,6 +13,8 @@ const About = () => {
     window.scrollTo(0, 0);
   };
 
+  //comment
+
   return (
     <>
       <h2 className="about">About Me</h2>

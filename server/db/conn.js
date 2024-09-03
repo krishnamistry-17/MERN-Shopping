@@ -1,16 +1,20 @@
 /** @format */
-const mongoose = require("mongoose");
+
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config({ path: "./config.env" });
 
 const DB = process.env.DATABASE;
 
 mongoose
-  .connect(DB, {
+  .connect(DB || "mongodb://localhost:27017/mern12", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log(`connection successful`);
+    console.log("Database connected successfully");
   })
   .catch((err) => {
-    console.error(`no connection`, err);
+    console.log("Database connection failed", err);
   });

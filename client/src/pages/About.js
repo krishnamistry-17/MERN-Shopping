@@ -25,7 +25,7 @@ const About = () => {
               <div className="container">
                 <h2>krishna Mistry</h2>
                 <p className="title">Web Developer</p>
-                <p>Some text that describes me </p>
+                <p>Student at Uka Tarsadiya University </p>
                 <p>krishnamistry172003@gmail.com</p>
                 <p>
                   <button

@@ -48,6 +48,10 @@ const ShopContextProvider = (props) => {
     }
   };
 
+  const clearCart = () => {
+    setCartItems(getDefaultCart());
+  };
+
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const itemId in cartItems) {
@@ -73,6 +77,9 @@ const ShopContextProvider = (props) => {
     return totalItem;
   };
 
+  // Define the base URL for API requests
+  const apiBaseUrl = process.env.REACT_APP_API || "http://localhost:3000";
+
   const ContextValue = {
     getTotalCartItems,
     getTotalCartAmount,
@@ -82,6 +89,8 @@ const ShopContextProvider = (props) => {
     removeFromCart,
     increaseQuantity,
     decreaseQuantity,
+    clearCart, // Add clearCart to context value
+    url: apiBaseUrl, // Add URL to context value
   };
 
   return (

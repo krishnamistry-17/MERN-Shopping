@@ -1,0 +1,68 @@
+.place-order {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: max(40%, 500px);
+}
+
+.place-order-left .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.place-order-left input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+
+.place-order-left .multi-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.place-order-right {
+    width: 100%;
+    max-width: max(80%, 500px);
+}
+
+.place-order .btn-check {
+    margin-top: 30px;
+background-color: rgb(245, 134, 152);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.place-order .btn-check:hover {
+    background-color: rgb(177, 81, 98);
+}
+
+.place-order-right .cartitems-total {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+
+.place-order-right .cartitems-total-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}

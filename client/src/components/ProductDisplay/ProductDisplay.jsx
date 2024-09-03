@@ -51,29 +51,29 @@ const ProductDisplay = (props) => {
           </div>
         </div>
         <div className="productdisplay-right-description">
-          Welcome to the SHOPPER DESIGNING{" "}
+          Welcome to the SHOPPER DESIGNING
         </div>
-      </div>
 
-      <div className="productdisplay-right-size">
-        <h1>Select Size</h1>
-        <div className="productdisplay-right-sizes">
-          <div>S</div>
-          <div>M</div>
-          <div>L</div>
-          <div>XL</div>
-          <div>XXL</div>
+        {/* Updated Structure */}
+        <div className="productdisplay-right-size">
+          <h1>Select Size</h1>
+          <div className="productdisplay-right-sizes">
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+            <div>XXL</div>
+          </div>
         </div>
+        <button
+          className="add-button"
+          onClick={() => {
+            addToCart(product.id);
+          }}>
+          ADD TO CART
+        </button>
+        <p className="productdisplay-right-category">SHOPPER'S COLLECTIONS</p>
       </div>
-
-      <button
-        className="add-button"
-        onClick={() => {
-          addToCart(product.id);
-        }}>
-        ADD TO CART
-      </button>
-      <p className="productdisplay-right-category">SHOPPER'S COLLECTIONS</p>
     </div>
   );
 };

@@ -60,6 +60,15 @@
     padding: 15px 0px;
     
 }
+.btn-check{
+    border: none;
+    color: white;
+    background-color: rgb(245, 134, 152);
+    width: max(15vw,200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 .cartitems-total button {
     width: 262px;
@@ -82,7 +91,7 @@
 
 .cartitem-quantity button {
     padding: 5px 4.5px;
-    background-color: rgb(128, 150, 247);
+    background-color: rgb(245, 134, 152);
     color: white;
     border: none;
     border-radius: 3px;
@@ -91,7 +100,7 @@
 }
 
 .cartitem-quantity button:hover {
-    background-color: #0056b3;
+background-color: rgb(177, 81, 98);
 }
 
 .cartitem-quantity span {

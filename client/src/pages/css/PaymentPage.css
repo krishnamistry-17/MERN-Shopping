@@ -1,0 +1,48 @@
+.payment-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    padding: 0 20px;
+}
+
+.payment-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.payment-page h1 {
+    margin-bottom: 30px;
+    /* Increased margin to better space from the button */
+    font-size: 2rem;
+    color: #333;
+}
+
+.payment-option {
+    background-color: rgb(245, 134, 152);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    /* Space between text and button */
+}
+
+.payment-option:hover {
+    background-color: rgb(177, 81, 98);
+    /* Slightly darker shade on hover */
+    transform: scale(1.02);
+}
+
+.payment-option:active {
+    background-color: rgb(177, 81, 98);
+    /* Even darker shade when active */
+}

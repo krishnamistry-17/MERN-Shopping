@@ -5,30 +5,36 @@ import { useNavigate } from "react-router-dom";
 import { UserContext } from "../App";
 
 const Logout = () => {
-  const { state, dispatch } = useContext(UserContext);
+  const { dispatch } = useContext(UserContext);
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/logout", {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      credentials: "include",
-    })
-      .then((res) => {
-        dispatch({ type: "USER", payload: false });
-        navigate("/login", { replace: true });
+    const logoutUser = async () => {
+      try {
+        const res = await fetch("/logout", {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+        });
+
         if (res.status !== 200) {
-          const error = new Error(res.error);
+          const error = new Error("Logout failed");
           throw error;
         }
-      })
-      .catch((err) => {
+
+        dispatch({ type: "USER", payload: false });
+      } catch (err) {
         console.log(err);
-      });
-  }, [navigate]);
+      } finally {
+        navigate("/login", { replace: true });
+      }
+    };
+
+    logoutUser();
+  }, [dispatch, navigate]);
 
   return (
     <>

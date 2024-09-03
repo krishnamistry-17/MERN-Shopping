@@ -19,7 +19,8 @@ import kid_banner from "./components/Assets/banner_kids.png";
 import { reducer, initialState } from "./reducer/UserReducer";
 import React, { createContext, useReducer, useContext } from "react";
 import Intro from "../src/components/Intro/Intro"; // Import the new introductory page
-
+import Placeorder from "./pages/Placeorder";
+import PaymentPage from "./pages/PaymentPage";
 
 export const UserContext = createContext();
 
@@ -70,10 +71,12 @@ const Routing = () => {
         path="/cart"
         element={state ? <Cart /> : <Navigate to="/login" />}
       />
+      <Route path="/order" element={<Placeorder />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="*" element={<Errorpage />} />
       <Route path="/logout" element={<Logout />} />
+      <Route path="/payment" element={<PaymentPage />} />
     </Routes>
   );
 };

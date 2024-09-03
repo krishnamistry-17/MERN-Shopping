@@ -4,6 +4,7 @@ import React, { useContext } from "react";
 import "../pages/css/Cart.css";
 import { ShopContext } from "../context/ShopContext";
 import remove_icon from "../components/Assets/cart_cross_icon.png";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const {
@@ -14,6 +15,8 @@ const Cart = () => {
     decreaseQuantity,
     getTotalCartAmount,
   } = useContext(ShopContext);
+
+  const navigate = useNavigate();
 
   // Function to format currency to Indian Rupees
   const formatCurrency = (amount) => {
@@ -99,11 +102,14 @@ const Cart = () => {
               <h3>Total</h3>
               <h3>{formatCurrency(getTotalCartAmount())}</h3>
             </div>
+            <button onClick={() => navigate("/order")} className="btn-check">
+              PROCEED TO CHECKOUT
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="delivery-details">
+      {/*<div className="delivery-details">
         <h3>Delivery Details:</h3>
         <br />
         <input type="name" placeholder="Enter First Name"></input>
@@ -139,7 +145,7 @@ const Cart = () => {
         <br />
         <br />
         <button className="place-order">Place Order</button>
-      </div>
+      </div>*/}
     </div>
   );
 };

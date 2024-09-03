@@ -1,0 +1,74 @@
+/* ListProduct.css */
+
+/* General styles for the list product component */
+.list-product {
+   padding: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/* Style for product list headers */
+.listproduct-format-main {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+   gap: 10px;
+   margin-bottom: 10px;
+}
+
+/* Style for individual product entries */
+.listproduct-format {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+   gap: 10px;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+/* Style for product images */
+.listproduct-product-item {
+   max-width: 100px;
+   height: auto;
+}
+
+/* Style for the remove icon */
+.listproduct-remove-icon {
+   cursor: pointer;
+   width: 24px;
+   height: 24px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+   .listproduct-format-main,
+   .listproduct-format {
+      grid-template-columns: 1fr 2fr 1fr;
+   }
+
+   .listproduct-product-item {
+      max-width: 80px;
+   }
+
+   .listproduct-remove-icon {
+      width: 20px;
+      height: 20px;
+   }
+}
+
+@media (max-width: 480px) {
+
+   .listproduct-format-main,
+   .listproduct-format {
+      grid-template-columns: 1fr;
+      text-align: center;
+   }
+
+   .listproduct-product-item {
+      max-width: 60px;
+   }
+
+   .listproduct-remove-icon {
+      width: 18px;
+      height: 18px;
+   }
+}
